@@ -3,8 +3,6 @@ import praw
 
 user_agent = ("PyEng Bot 0.1")
 
-r = praw.Reddit("learnpython")
-
 r = praw.Reddit(user_agent = user_agent)
 
 subreddit = r.get_subreddit("learnpython")
