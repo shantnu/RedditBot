@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import praw
 import pdb
 import re
