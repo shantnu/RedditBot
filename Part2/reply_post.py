@@ -41,7 +41,7 @@ for submission in subreddit.get_hot(limit=5):
         # Do a case insensitive search
         if re.search("i love python", submission.title, re.IGNORECASE):
             # Reply to the post
-            submission.add_comment("Botty bot says: Me too!!")
+            submission.add_comment("Nigerian scammer bot says: It's all about the Bass (and Python)")
             print "Bot replying to : ", submission.title
 
             # Store the current id into our list

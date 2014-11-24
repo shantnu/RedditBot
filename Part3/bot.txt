@@ -1,0 +1,77 @@
+Shantnu@Shantnu-PC /cygdrive/c/st/Vagrant
+$ mkdir bot
+
+Shantnu@Shantnu-PC /cygdrive/c/st/Vagrant
+$ cd bot/
+
+Shantnu@Shantnu-PC /cygdrive/c/st/Vagrant/bot
+$ vagrant init precise32
+A `Vagrantfile` has been placed in this directory. You are now
+ready to `vagrant up` your first virtual environment! Please read
+the comments in the Vagrantfile as well as documentation on
+`vagrantup.com` for more information on using Vagrant.
+
+Shantnu@Shantnu-PC /cygdrive/c/st/Vagrant/bot
+$ vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+[default] Importing base box 'precise32'...
+[default] Matching MAC address for NAT networking...
+[default] Setting the name of the VM...
+[default] Clearing any previously set forwarded ports...
+[default] Clearing any previously set network interfaces...
+[default] Preparing network interfaces based on configuration...
+[default] Forwarding ports...
+[default] -- 22 => 2222 (adapter 1)
+[default] Booting VM...
+[default] Waiting for machine to boot. This may take a few minutes...
+DL is deprecated, please use Fiddle
+[default] Machine booted and ready!
+[default] The guest additions on this VM do not match the installed version of
+VirtualBox! In most cases this is fine, but in rare cases it can
+prevent things such as shared folders from working properly. If you see
+shared folder errors, please make sure the guest additions within the
+virtual machine match the version of VirtualBox you have installed on
+your host and reload your VM.
+
+Guest Additions Version: 4.2.0
+VirtualBox Version: 4.3
+[default] Mounting shared folders...
+[default] -- /vagrant
+
+Shantnu@Shantnu-PC /cygdrive/c/st/Vagrant/bot
+$ vagrant ssh
+Welcome to Ubuntu 12.04 LTS (GNU/Linux 3.2.0-23-generic-pae i686)
+
+ * Documentation:  https://help.ubuntu.com/
+New release '14.04.1 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+Welcome to your Vagrant-built virtual machine.
+Last login: Fri Sep 14 06:22:31 2012 from 10.0.2.2
+
+vagrant@precise32:~$ cd /vagrant/
+
+vagrant@precise32:/vagrant$ touch install.sh
+
+vagrant@precise32:/vagrant/RedditBot/Part 2$ crontab -e
+no crontab for vagrant - using an empty one
+
+Select an editor.  To change later, run 'select-editor'.
+  1. /bin/ed
+  2. /bin/nano        <---- easiest
+  3. /usr/bin/vim.tiny
+
+==> Press Ctrl + x to exit
+
+
+* * * * * cd /vagrant/RedditBot/Part2/; /vagrant/RedditBot/Part2/reply_post.py > /vagrant/RedditBot/Part2/out.txt
+
+
+vagrant@precise32:/vagrant/RedditBot/Part2$ exit
+logout
+Connection to 127.0.0.1 closed.
+
+Shantnu@Shantnu-PC /cygdrive/c/st/Vagrant/bot
+$ vagrant halt
+[default] Attempting graceful shutdown of VM...
+DL is deprecated, please use Fiddle
