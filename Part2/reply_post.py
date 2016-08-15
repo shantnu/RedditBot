@@ -13,7 +13,7 @@ if not os.path.isfile("config_bot.py"):
     exit(1)
 
 # Create the Reddit instance
-user_agent = ("SemiAmusingBot 0.2")
+user_agent = "Windows:SemiAmusingBot:0.3 (by /u/rgautier)"
 r = praw.Reddit(user_agent=user_agent)
 
 # and login (DON'T USE THIS AGAIN)
