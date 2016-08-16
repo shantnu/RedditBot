@@ -8,6 +8,6 @@ pswd =
 oauth_client_id = <Put your app id here>
 oauth_client_secret = <Put your app secret here>
 # Corresponds with the callback URL in the Reddit app
-oauth_redirect_uri = http://127.0.0.1:6501
+oauth_redirect_uri = http://127.0.0.1:65010
 log_requests = 0
 # After running get_secret.py you should find your auth ID below
