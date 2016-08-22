@@ -4,13 +4,6 @@ import pdb
 import re
 import os
 import sys
-from config_bot import *
-
-# Check that the file that contains our username exists
-if not os.path.isfile("config_bot.py"):
-    print "You must create a config file with your username and password."
-    print "Please see config_skel.py"
-    exit(1)
 
 # Create the Reddit instance
 user_agent = "Windows:SemiAmusingBot:0.3 (by /u/rgautier)"
