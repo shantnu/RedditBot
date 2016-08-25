@@ -54,4 +54,5 @@ docs/_build/
 target/
 
 config_bot.py
+praw.ini
 posts_replied_to.txt
