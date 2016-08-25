@@ -7,8 +7,8 @@ import sys
 import smtplib
 from email.mime.text import MIMEText
 
-me = 'SemiAmusingBot@vps1.richgautier.com'
-you = 'rgautier@gmail.com'
+me = 'YourBot@yourhost.com'
+you = 'youremail@yourdomain.com'
 
 # Create the Reddit instance
 user_agent = "Windows:ReadReactBot:0.1 (by /u/rgautier)"
