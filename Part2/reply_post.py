@@ -35,7 +35,7 @@ else:
 subreddit = r.get_subreddit('pythonforengineers')
 
 f = open("posts_replied_to.txt","a")
-for submission in subreddit.get_hot(limit=50):
+for submission in subreddit.get_hot(limit=10):
     # print submission.title
 
     # If we haven't replied to this post before
@@ -45,7 +45,7 @@ for submission in subreddit.get_hot(limit=50):
         if re.search("i love python", submission.title, re.IGNORECASE):
             # Reply to the post
             try:
-                submission.add_comment("SemiAmusingBot says: They're very gentle snakes.")
+                submission.add_comment("SemiAmusingBot says: I am now installed on a VPS. reply #3 test")
             except:
 		print "Error: ", sys.exc_info()[0]
                 print "Probably rate limited cuz you're a bot."
