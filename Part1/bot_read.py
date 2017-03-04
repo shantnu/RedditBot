@@ -3,10 +3,10 @@ import praw
 
 reddit = praw.Reddit('bot1')
 
-subreddit = reddit.subreddit("learnpython")
+subreddit = reddit.subreddit("modernmagic")
 
 for submission in subreddit.hot(limit=5):
     print("Title: ", submission.title)
-    print("Text: ", submission.selftext)
-    print("Score: ", submission.score)
+    linkData = submission.url
+    print("Url: ", linkData)    
     print("---------------------------------\n")
