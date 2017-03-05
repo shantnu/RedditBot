@@ -1,29 +1,5 @@
-<div class="rlink"><img src="rlogo.jpg" alt="link or default reddit icon" /><div class="rinfo"><span class="rtitle">Here's the New /r/ModernMagic Discord Server Information!</span><br /><span class="rtext">Great post, appreciate how you took the time to be so...</span></div><div class="points">67</div></div>
-<div class="rlink"><img src="rlogo.jpg" alt="link or default reddit icon" /><div class="rinfo"><span class="rtitle">Modern: a short guide and list of resources for new and returning players</span><br /><span class="rtext">If this is a new player thing, the best advice would be to proxy anything before buying in, because $$$. Can this be sidebar-ed? This i...</span></div><div class="points">74</div></div>
-<div class="rlink"><img src="rlogo.jpg" alt="link or default reddit icon" /><div class="rinfo"><span class="rtitle">New to Modern. Meta Question</span><br /><span class="rtext">All in all, control does tend to have a tougher time in modern. We don't have quite enough catch-all answers, so making a deck and piloting it is harder (let alone actually winning with it). Grixis is usually the top contender for control decks in Modern. If your heart is set on true control, I'd suggest looking into the following decks:
-
-* Grixis Control
-
-* BTL Scapeshift
-
-If you're willing to branch out more into decks that have control elements but aren't really control, then I'd look into these:
-
-* Jund
-
-* Junk
-
-* Mono-U Tron
-
-* Merfolk
-
-* Delver
-
-* Lantern Control
-
-* Death and Taxes
-
-* Sun and Moon
-
-Control is in a weird place in Modern, and you usually have to compromise t...</span></div><div class="points">20</div></div>
-<div class="rlink"><img src="rlogo.jpg" alt="link or default reddit icon" /><div class="rinfo"><span class="rtitle">RUG Flash! (Ft. Surrak Dragonclaw)</span><br /><span class="rtext">Love RUG too and know the pain of having your non scapeshift deck pounded over and over. And then thinking everything looks so good on paper. I'd put huntmaster in MB. You're going mid range anyway i think having 2 wouldnt be a bad idea. He is the king of grind...</span></div><div class="points">11</div></div>
-<div class="rlink"><img src="rlogo.jpg" alt="link or default reddit icon" /><div class="rinfo"><span class="rtitle">Any good UW midrange decks?</span><br /><span class="rtext">Just wanted to say that condemn would be great in uw now, at least against death's shadow jund. It will 2-for-1 multiple shadows with the life gain "drawback". When eldrazi winter was on the scene, condemn showed up as path 5-6, seems like it might be time to reco...</span></div><div class="points">3</div></div>
+<div class="rlink"><img src="rlogo.jpg" alt="link or default reddit icon" /><div class="rinfo"><span class="rtitle">Tetris IRL</span><br /><span class="rtext">Tetris IRL...</span></div><div class="points">857k</div></div>
+<div class="rlink"><img src="rlogo.jpg" alt="link or default reddit icon" /><div class="rinfo"><span class="rtitle">The Needler</span><br /><span class="rtext">The Needler...</span></div><div class="points">487k</div></div>
+<div class="rlink"><img src="rlogo.jpg" alt="link or default reddit icon" /><div class="rinfo"><span class="rtitle">How every NPC in an RPG actually felt:</span><br /><span class="rtext">How every NPC in an RPG actually felt:...</span></div><div class="points">941k</div></div>
+<div class="rlink"><img src="rlogo.jpg" alt="link or default reddit icon" /><div class="rinfo"><span class="rtitle">When you have a family to feed but this shitbag adve...</span><br /><span class="rtext">When you have a family to feed but this shitbag ad...</span></div><div class="points">3463</div></div>
+<div class="rlink"><img src="rlogo.jpg" alt="link or default reddit icon" /><div class="rinfo"><span class="rtitle">Sounds like good game logic to me!</span><br /><span class="rtext">Sounds like good game logic to me!...</span></div><div class="points">653k</div></div>
