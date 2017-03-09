@@ -1,0 +1,119 @@
+    html,
+    body {
+        margin: 0;
+        font-family: sans-serif;
+    }
+
+    .header {
+        z-index: 5;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: #000;
+        text-align: center;
+        height: 100px;
+        background-image: url('surf.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        color: #fff;
+        text-shadow: 3px 3px black;
+    }
+
+    .nav {
+        padding-bottom: 10px;
+    }
+
+    .nav a {
+        margin: 0% 5%;
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: #fff;
+    }
+
+    .wrapper {
+        padding-top: 100px;
+        width: 80%;
+        position: relative;
+        float: right;
+    }
+
+    .rlink {
+        width: 100%;
+        margin: auto;
+        height: calc(80vw/6);
+        max-height: 146px;
+        position: relative;
+        background: white;
+        overflow: hidden;
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+    }
+
+    .rlink:nth-child(odd) {
+        background: #C0D7EF;
+    }
+
+    .rinfo {
+        float: left;
+        max-width: 80%;
+        overflow: hidden;
+        margin-left: 10px;
+    }
+
+    .rtitle {
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    .rtext {
+        font-size: 1.5rem;
+    }
+
+    .modernmagic .tag {
+        background: green;
+    }
+
+    .gaming .tag {
+        background: blue;
+    }
+
+    .sports .tag {
+        background: yellow;
+    }
+
+    .tag {
+        height: 100%;
+        width: 2%;
+        background: black;
+        float: right;
+    }
+
+    .filter {
+        position: fixed;
+        top: 100px;
+        left: 0;
+        width: 20%;
+        height: calc(100vh - 100px);
+        background: black;
+        font-weight: bold;
+        color: white;
+        font-size: 1rem;
+    }
+
+    .filter div {
+        width: 92%;
+        margin-left: 8%;
+    }
+
+    .selection {
+        float: right;
+        margin-right: 8%;
+        transform: scale(1.5);
+    }
