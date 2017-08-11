@@ -12,7 +12,7 @@ CONN = sqlite3.connect("bot.db")
 CONN.row_factory = sqlite3.Row
 
 def return_reply():
-	'''Selects a random post from our sqlite db and returns a sqlite3.Row object.'''
+	'''Selects a random post from our sqlite db and returns a sqlite3.Row'''
 	#create random int to select a random record by id
 	rand_int = randint(0, 100)
 	#convert to string for query
