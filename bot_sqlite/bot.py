@@ -54,14 +54,14 @@ def post_comment():
 			VALUES (?, ?)'''.format(table=write_table_name)
 			write.execute(write_query, (reply_time, post.id))
 			CONN.commit()
-			#here is th magic!
+			#here is the magic!
 			post.reply(comment)
 			confirm_message = '''You have succesfully replied to the post titled: {} with the comment: {}'''.format(post.title, comment)
 			print(confirm_message)
 			
 #main method
 def main():
-	'''Main function of posts.py. Runs the db_insert function.'''
+	'''Main function of bot.py. Runs the post_comment function.'''
 	post_comment()
 #call main
 if __name__ == "__main__":
