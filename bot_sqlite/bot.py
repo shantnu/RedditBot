@@ -32,8 +32,8 @@ def return_reply():
 	reply = read_cursor.fetchone()
 	#new cursor to write updates to 'posts'.
 	write_cursor = CONN.cursor()
-	#set update is_used to 1 so we know we have used this row to form content.
-	#record will be filtered from our read_query in future runs.
+	#set is_used to 1 so we know we have already used this row to form content.
+	#the record will now be filtered from our read_query in future runs.
 	write_query = 'UPDATE {table} SET is_used = ? WHERE id = ?'.format(table=table_name)
 	#notice the comma after 'rand.id', this sets the parameter as a single element tuple
 	#so you don't confuse sqlite.
@@ -48,7 +48,7 @@ def post_comment():
 	#string together our comment to post.
 	comment = reply['self_text'] + " -" + reply['author']
 	#loop through posts, limit set to 1 to avoid exceeding API rate limit.
-	#using 'SUBREDDIT.new' so we don't hit archived posts
+	#using 'SUBREDDIT.new' so we don't hit archived posts.
 	for post in SUBREDDIT.new(limit=1):
 		read = CONN.cursor()
 		read_table_name = 'replied_to'
@@ -61,10 +61,13 @@ def post_comment():
 		#this could use error handling.
 		if read_result is None:
 			post.reply(comment)
+			#print some info about our reply.
 			confirm_message = '''Replied to: {}\nwith the comment: {}'''.format(post.title, comment)
 			print(confirm_message)
+			#set variable with current time and convert to string. 
+			#for insertion into our 'replied_to' table.
 			reply_time = str(datetime.now())
-			#record our submission.
+			#record our comment submission.
 			write = CONN.cursor()
 			write_table_name = 'replied_to'
 			write_query = '''INSERT INTO {table} (time_replied, submission_id) 
