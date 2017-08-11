@@ -44,7 +44,7 @@ def post_comment():
 		read.execute(read_query, (sub_id, post.id,))
 		#fetch result
 		read_result = read.fetchone()
-		#if there submission doesn't exist in the db we post our comment
+		#if their submission doesn't exist in the db we post our comment
 		#this needs error handling, fork it and fix it!
 		if read_result is None:	
 			reply_time = str(datetime.now())
