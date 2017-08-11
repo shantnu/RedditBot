@@ -9,3 +9,12 @@ https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/
 
 I highly reccomend building your projects using a venv or virtaulenv. 
 If you are not familiar with venv go read about it and come back with an activated venv ;)
+
+As always review all the code before running.
+
+You'll want to run bot.sql first, there are instructions in the commments.
+
+posts.py should be run 2nd, it will add the Reddit post data to the db.
+
+bot.py creates a response from the 'posts' table, checks if you have responded to the post in the past. If not it posts
+the new comment and adds a record of it to the 'replied_to' table. If you want to run it as a cronjob make sure to add a shebang.
