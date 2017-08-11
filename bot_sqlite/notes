@@ -1,0 +1,11 @@
+You will need to have sqlite3 installed, generally it's something like this:
+
+    #sudo apt-get install sqlite3 libsqlite3-dev
+
+You may find it useful to be able to visualize your sqlite db, you can use the following Firefox 
+add-on to interact with sqlite:
+
+https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/
+
+I highly reccomend building your projects using a venv or virtaulenv. 
+If you are not familiar with venv go read about it and come back with an activated venv ;)
