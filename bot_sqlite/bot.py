@@ -1,4 +1,4 @@
-'''This bot pulls replies from a sqlite table and posts them as comments on Reddit'''
+"""This bot pulls replies from a sqlite table and posts them as comments on Reddit"""
 
 from datetime import datetime
 from random import randint
@@ -14,7 +14,7 @@ CONN = sqlite3.connect("bot.db")
 CONN.row_factory = sqlite3.Row
 
 def return_reply():
-	'''Selects a random post from our sqlite db and returns a sqlite3.Row object.'''
+	"""Selects a random post from our sqlite db and returns a sqlite3.Row object."""
 	#create a random int to select a random record by id. If you recall we pulled
 	#100 records with 'posts.py', so we will use a range from 0 - 100.
 	rand_int = randint(0, 100)
@@ -42,7 +42,7 @@ def return_reply():
 	return reply
 
 def post_comment():
-	'''Posts a comment created in the return_reply function to a Reddit post.'''
+	"""Posts a comment created in the return_reply function to a Reddit post."""
 	#get our reply.
 	reply = return_reply()
 	#string together our comment to post.
@@ -79,7 +79,7 @@ def post_comment():
 			
 #main method.
 def main():
-	'''Main function of bot.py. Runs the post_comment function.'''
+	"""Main function of bot.py. Runs the post_comment function."""
 	post_comment()
 #call main.
 if __name__ == "__main__":
