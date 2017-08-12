@@ -28,22 +28,22 @@ def return_reply():
 	read_query = 'SELECT * FROM {table} WHERE is_used = 0 AND id = ?'.format(table=table_name)
 	#execute our query.
 	read_cursor.execute(read_query, (rand_id,))
-	#set reply as Row.
+	#set read_result as Row.
 	read_result = read_cursor.fetchone()
-	#set a reply in case our query rand_id is a row with 
+	#set a reply in case our query with rand_id is a row where is_used == 1
 	if read_result is None:
 		reply = 'We hit a duplicate folks! -hardcoded'
 	else:
 		reply = read_result['self_text'] + " -" + read_result['author']
 		#new cursor to write updates to 'posts'.
 		write_cursor = CONN.cursor()
-		#set update is_used to 1 so we know we have  already used this row to form content.
+		#set update is_used to 1 so we know we have already used this row to form content.
 		#the record will now be filtered from our read_query in future runs.
 		write_query = 'UPDATE {table} SET is_used = ? WHERE id = ?'.format(table=table_name)
 		#notice the comma after 'rand.id', this sets the parameter as a single element tuple
 		#so you don't confuse sqlite.
 		write_cursor.execute(write_query, (1, rand_id,))
-	#return our row.
+	#return our reply.
 	return reply
 
 def post_comment():
