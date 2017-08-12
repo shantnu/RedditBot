@@ -13,7 +13,7 @@ CONN = sqlite3.connect("bot.db")
 def db_insert():
 	"""Pull posts from Reddit and insert into a sqlite table."""
 	#this should look familiar.
-	for post in SUBREDDIT.hot(limit=100):
+	for post in SUBREDDIT.new(limit=100):
 		#create a cursor for executing sql.
 		cursor = CONN.cursor()
 		#setting a value on null self.text, this way we can fill our db.
@@ -36,6 +36,7 @@ def db_insert():
 		print("Title: {}".format(post.title))
 		print("Text: {}".format(post.selftext))
 		print("Score: {}".format(post.score))
+		print("Score: {}".format(post.id))
 		print("---------------------------------")
 #main method.
 def main():
