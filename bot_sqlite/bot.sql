@@ -18,3 +18,5 @@ create table replied_to (
 --run these commands in the directory where the db is stored
 --$sqlite3 your_db.db
 --sqlite> .read bot.sql
+--sqlite> .tables
+-- HOORAY! you have tables.
