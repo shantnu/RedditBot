@@ -1,7 +1,6 @@
  
-This is currently a fork of https://github.com/shantnu/RedditBot which served as a basic template for what I've provided here. 
-I have not modified any of the other files in any way, I've only added the four files contained in this directory. 
-If you have questions regarding the setup you can refer to the original or 'cd ..'
+https://github.com/shantnu/RedditBot served as a basic template for what I've provided here.
+If you have questions regarding the setup you can 'cd ..'
 
 You will need to have sqlite3 installed, generally it's something like this:
 
