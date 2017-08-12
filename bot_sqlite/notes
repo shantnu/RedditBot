@@ -1,6 +1,6 @@
  
 https://github.com/shantnu/RedditBot served as a basic template for what I've provided here.
-If you have questions regarding the setup you can 'cd ..'
+If you have questions regarding the setup you can just 'cd ..' ;)
 
 You will need to have sqlite3 installed, generally it's something like this:
 
