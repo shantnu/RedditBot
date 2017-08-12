@@ -56,7 +56,6 @@ def post_comment():
 		read.execute(read_query, (post.id,))
 		#set result.
 		read_result = read.fetchone()
-		print(read_result)
 		#if the submission id doesn't exist in our db we post our comment.
 		#this could use error handling.
 		if read_result is None:
@@ -72,7 +71,7 @@ def post_comment():
 			write_table_name = 'replied_to'
 			write_query = '''INSERT INTO {table} (time_replied, submission_id) 
 			VALUES (?, ?)'''.format(table=write_table_name)
-			write.execute(write_query, (reply_time, post.id))
+			write.execute(write_query, (reply_time, post.id,))
 			CONN.commit()
 		#if the our read_query returns a result we have already commented on the newest post.		
 		else:
