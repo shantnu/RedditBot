@@ -25,6 +25,8 @@ def return_reply():
 	#create a cursor for executing sql.
 	read_cursor = CONN.cursor()
 	#select an unused row to form our comment.
+	#we need to transform this to a function and loop when the result is None,
+	#if you pay attention you'll notice that this will fail eventually. I am working on updating this now.
 	read_query = 'SELECT * FROM {table} WHERE is_used = 0 AND id = ?'.format(table=table_name)
 	#execute our query.
 	read_cursor.execute(read_query, (rand_id,))
