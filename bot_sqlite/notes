@@ -1,0 +1,30 @@
+ 
+https://github.com/shantnu/RedditBot served as a basic template for what I've provided here.
+If you have questions regarding the setup you can just 'cd ..' ;)
+
+You will need to have sqlite3 installed, generally it's something like this:
+
+    #sudo apt-get install sqlite3 libsqlite3-dev
+
+You may find it useful to be able to visualize your sqlite db, you can use the following Firefox 
+add-on to interact with sqlite:
+
+https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/
+
+I highly reccomend building your projects using a venv or virtaulenv. 
+If you are not familiar with venv go read about it and come back with an activated venv ;)
+
+As always, review all the code before running.
+
+____
+
+START
+
+You'll want to do the sql bit first. You can run bot.sql with sqlite3, there are instructions in the commments.
+If learning is your goal I reccomend using bot.sql as a template, and creating your tables manually
+in the sqlite3 cli.
+
+posts.py should be run 2nd, it will add the Reddit post data to your db.
+
+bot.py creates a response from the 'posts' table, and checks if you have responded to the current post in the past. If not it posts
+the new comment and adds a record of it to the 'replied_to' table. If you want to run it as a cronjob make sure to add a shebang.
