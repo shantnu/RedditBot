@@ -73,7 +73,7 @@ def post_comment():
 			VALUES (?, ?)'''.format(table=write_table_name)
 			write.execute(write_query, (reply_time, post.id,))
 			CONN.commit()
-		#if the our read_query returns a result we have already commented on the newest post.		
+		#if our read_query returns a result we have already commented on the newest post.		
 		else:
 			print('Nothing new ;(')
 			
