@@ -1,5 +1,5 @@
-#These are doc strings, use them :)
-'''Gets Reddit posts and saves selected values to a sqlite db.'''
+#These are doc strings, they're cool :)
+"""Gets Reddit posts and saves selected values to a sqlite db."""
 
 import sqlite3
 import praw
@@ -11,7 +11,7 @@ SUBREDDIT = REDDIT.subreddit('pythonforengineers')
 CONN = sqlite3.connect("bot.db")
 
 def db_insert():
-	'''Pull posts from Reddit and insert into a sqlite table.'''
+	"""Pull posts from Reddit and insert into a sqlite table."""
 	#this should look familiar.
 	for post in SUBREDDIT.hot(limit=100):
 		#create a cursor for executing sql.
@@ -39,7 +39,7 @@ def db_insert():
 		print("---------------------------------")
 #main method.
 def main():
-	'''Main function of posts.py - Runs the db_insert function.'''
+	"""Main function of posts.py - Runs the db_insert function."""
 	db_insert()
 #call main.
 if __name__ == "__main__":
