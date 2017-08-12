@@ -28,7 +28,7 @@ def return_reply():
 	read_query = 'SELECT * FROM {table} WHERE is_used = 0 AND id = ?'.format(table=table_name)
 	#execute our query.
 	read_cursor.execute(read_query, (rand_id,))
-	#set reply as Row.
+	#set read_result as Row.
 	read_result = read_cursor.fetchone()
 	#in case our read_result is_used == 1
 	if read_result is None:
