@@ -6,7 +6,7 @@ import random
 # Quotes taken from: http://www.imdb.com/character/ch0007553/quotes
 marvin_quotes = \
 [
-" I've calculated your chance of survival, but I don't think you'll like it. ",
+" I've calculated your chance of survival, and I think you'll like it. ",
 " Do you want me to sit in a corner and rust or just fall apart where I'm standing?",
 "Here I am, brain the size of a planet, and they tell me to take you up to the bridge. Call that job satisfaction? Cause I don't. ",
 "Here I am, brain the size of a planet, and they ask me to pick up a piece of paper. ",
@@ -19,14 +19,14 @@ marvin_quotes = \
 
 ]
 
-reddit = praw.Reddit('bot1')
+reddit = praw.Reddit('bot')
 
 subreddit = reddit.subreddit("pythonforengineers")
 
 for comment in subreddit.stream.comments():
     print(comment.body)
     if re.search("Marvin Help", comment.body, re.IGNORECASE):
-            marvin_reply = "Marvin the Depressed Robot says: " + random.choice(marvin_quotes)
+            marvin_reply = "Marvin the Happiest Robot says: " + random.choice(marvin_quotes)
             comment.reply(marvin_reply)
             print(marvin_reply)
             

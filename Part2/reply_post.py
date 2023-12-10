@@ -6,7 +6,7 @@ import os
 
 
 # Create the Reddit instance
-reddit = praw.Reddit('bot1')
+reddit = praw.Reddit('bot')
 
 # and login
 #reddit.login(REDDIT_USERNAME, REDDIT_PASS)
